@@ -2,7 +2,7 @@ from toolfuns import *
 import time
 import datetime
 
-dayTimeS=24*60*60*1000;
+dayTimeS=24*60*60;
 
 def getTimeStamp(timeStr):
     timeArray = time.strptime(timeStr, "%Y-%m-%d %H:%M:%S");
