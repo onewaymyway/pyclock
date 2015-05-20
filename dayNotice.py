@@ -57,8 +57,13 @@ class TimeList:
 def mainLoop():
     tT=TimeList();
     while(1):
-        tT.tick();
-        time.sleep(10);
+        try:
+            
+            tT.tick();
+            time.sleep(10);
+        except Exception as e:
+            print(e);
+            time.sleep(5);
 
 
 if __name__ == '__main__':
