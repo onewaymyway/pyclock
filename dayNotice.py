@@ -35,8 +35,9 @@ class TimeList:
             tTime["ctime"]=getTimeStamp(daytime+" "+tTime["time"]);
             if tTime["ctime"]<ttTime:
                 tTime["ctime"]=tTime["ctime"]+dayTimeS;
-            print(tTime["ctime"]);
+            
             times[tTime["time"]]=tTime;
+            print(tTime["ctime"]);
 
         self.times=times;
 
