@@ -49,7 +49,7 @@ class TimeList:
         for timest in self.times:
             cTime=self.times[timest];
             if int(cTime["ctime"])<=tTime:
-                print("time:"+cTime["msg"]);
+                #print("time:"+cTime["msg"]);
                 cTime["ctime"]=int(cTime["ctime"])+dayTimeS;
                 print("next:"+str(cTime["ctime"]));
                 notice(cTime["msg"]);
